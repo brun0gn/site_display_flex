@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    width: 13%;
+    height: 100vh;
+    background-color: black;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+
+}
+header span{color: #df0e62;}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+
+}
+
+header li {
+    margin-bottom: 15px;
+}
+
+header svg {
+    fill: white;
+    height: 15px;
+    margin-right: 15px;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    width: 87%;
+    background-image: url(Images/img_9.jpg.webp);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+#Welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+#Welcome h1 {
+    font-weight: 400;
+    font-size: 64px;
+}
+
+#Welcome p {
+    width: 60%;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#contatobtn {
+    display: inline-block;
+    width: 160px;
+    background-color: #df0e62;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 53px;
+    color: white;
+    font-weight: BOLD;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    row-gap: 6px;
+}
+
+#fotos div {
+    width: 33%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#fotos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+#fotos svg {
+    fill: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.rosa{
+    color: #df0e62;
+}
+
+#fotos div:hover svg {
+    top: 50%;
+    opacity: 1;
+}
+
+#fotos div:hover img {
+    filter: brightness(50%);
+}
+
+#meio {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 80px;
+    background-color: black;
+    
+
+    display: flex;
+    align-items: center;
+    
+
+}
+
+#meio h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+
+
+}
+
+#meio img {
+    border-radius: 100px;
+    justify-content: center;
+    display: flex-end;
+    width: 160px;
+    height: 160px;
+}
+
+#meio h2 {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+#meio p {
+    color: gray;
+    font-family: "Quicksand", sans-serif;
+}
+
+#biografia {
+    width: 100%;
+    height: 150vh;
+    background-color: #1a1a1a;
+    padding: 170px;
+
+
+}
+
+
+#biografia h1 {
+    color: white;
+    font-size: 50px;
+}
+
+#biografia img {
+    width: 300px;
+    height: 300px;
+    ;
+}
+
+#biografia h2 {
+    color: white;
+    font-size: 35px;
+}
+
+#biografia p {
+    color: white;
+    font-size: 19px;
+    font-family: "Quicksand", sans-serif;
+}
+
+#biografia h3 {
+    color: white;
+    font-size: 30px;
+}
+
+
+#lista {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 70%;
+}
+
+
+.lista1 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    font-family: "Quicksand", sans-serif;
+    width: 50%;
+    padding: 0;
+    text-align: left;
+}
+
+.lista1 li {margin-bottom: 10px; }
+
+
+#lista svg {
+    fill: greenyellow;
+    width: 15px;
+    height: 20px;
+    vertical-align: middle;
+
+
+}
+
+.btn:hover{
+    color: #df0e62;
+}
+
+#blog{
+    
+    background-color: black;
+    width: 100%;
+  
+    padding: 170px;
+    text-align: left;
+}
+
+#blog h1{
+    color: white;
+    margin-top: 24px;
+    font-size: 50px;
+}
+
+#blog img{
+    width: 250px;
+    height: 200px;
+
+}
+#blog h2{
+    
+    color: white;
+    padding: 20px;
+ 
+}
+
+.blog1{
+   display: flex;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+#blog div{
+    color: white;
+    padding: 20px;
+}
+
+
+
+.espaco{
+    padding: 15px;
+}
+
+#contato{
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #contact{
+    font-family: "Oswald";
+    color: white;
+    font-size: 64px;
+    margin-right: 560px;
+    margin-top: 100px
+  }
+  
+  #caixastxt{
+    color: #ffffff;
+    font-family: "Quicksand";
+    background-color: #1a1a1a00;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    border: none;
+    border-bottom: 1px solid white;
+  
+    background: transparent;
+    outline: none;
+  
+    padding: 5px;
+  }
+  
+  textarea {
+    border: none;
+    border-bottom: 1px solid white;
+  
+    background: transparent;
+    outline: none;
+  }
+  
+  .name{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  
+  #forms{
+    height: 700px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 112px;
+  }
+  
+  .texto{
+    font-family: "quicksand";
+  }
+  
+  #primeiro{
+    margin-right: 2.5px;
+    width: 380px;
+    height: 72px;
+  }
+  
+  #segundo{
+    margin-right: 2.5px;
+    width: 380px;
+    height: 72px;
+  }
+  
+  #terceiro{
+  margin-right: 2.5px;
+  width: 760px;
+  height: 72px;
+  }
+  
+  #txtloremCONTATO{
+    color: #808080;
+    font-family: "Quicksand";
+    margin-top: 20px;
+    font-size: 13.3px;
+    
+  }
+  
+  #contato a{
+      display: inline-block;
+      background-color: #df0e62;
+      width: 168px;
+      height: 53px;
+      border-radius: 35px;
+      line-height: 53px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px;
+      
+  }
+
+#rosa2{
+    background-color: #df0e62;
+    height: 0.5vh;
+    width: 100px;
+    position: absolute;
+}
+
+#btn1{
+    font-size: 25PX;
+    fill: white;
+    height: 6VH;
+    width: 50px;
+    border-radius: 30px;
+    background-color: rgba(66, 66, 66);
+    align-items: center;
+    margin-left: 250px;
+    
+}
+
+
+#btn1>svg{
+    width: 20px;
+    height: 20px;
+    margin-top: 17px;
+
+  
+   
+  
+}
+#btn2{
+    font-size: 25PX;
+    fill: white;
+    height: 6VH;
+    width: 50px;
+    border-radius: 30px;
+    background-color: rgba(66, 66, 66);
+    align-items: center;
+    margin-right: 250px;
+    
+}
+#btn2>svg{
+    width: 20px;
+    height: 20px;
+    margin-top: 17px;
+
+  
+   
+  
+}
+
+
+#flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
